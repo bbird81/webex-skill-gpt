@@ -7,10 +7,10 @@ services:
       context: containers/nginx-reverse-proxy
       dockerfile: nginx-proxy.Dockerfile
     ports:
-      - "10445:10445"
+      - "443:443"
 
   #backend application
-  flask-backend:
+  uvicorn-backend:
     hostname: uvicorn-backend
     build:
       context: .
