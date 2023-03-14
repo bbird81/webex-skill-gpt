@@ -1,0 +1,17 @@
+version: '3.9'
+
+services:
+  #reverse proxy
+  nginx-reverse-proxy:
+    build:
+      context: containers/nginx-reverse-proxy
+      dockerfile: nginx-proxy.Dockerfile
+    ports:
+      - "10445:10445"
+
+  #backend application
+  flask-backend:
+    hostname: uvicorn-backend
+    build:
+      context: .
+      dockerfile: uvicorn-backend.Dockerfile
