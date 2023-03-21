@@ -12,12 +12,13 @@ async def greet(current_state: DialogueState) -> DialogueState:
     new_state.directives = [responses.Reply(text), responses.Speak(text), responses.Sleep(10), ]
     return new_state
 
-@api.handle(pattern=r'.*\sabracadabra\s?.*')
+@api.handle(pattern=r'.*\s(saluta|salutare)\s?.*')
 async def spawnguestwifi(current_state: DialogueState) -> DialogueState:
 
-    text = 'Wifi Guest user created, now showing on device'
+    text = 'Grazie a tutti per essere intervenuti oggi, spero Thomas vi abbia raccontato cose interessanti!'
     new_state = current_state.copy()
-    assistant_event_payload = {'name': 'wifiguest', 'payload': {'id': 'hackathon'}}
-    new_state.directives = [responses.Reply(text), responses.Speak(text), responses.AssistantEvent(payload=assistant_event_payload), responses.Sleep(10), ]
+    #assistant_event_payload = {'name': 'wifiguest', 'payload': {'id': 'hackathon'}}
+    #new_state.directives = [responses.Reply(text), responses.Speak(text), responses.AssistantEvent(payload=assistant_event_payload), responses.Sleep(10), ]
+    new_state.directives = [responses.Reply(text), responses.Speak(text), responses.Sleep(10), ]
 
     return new_state
