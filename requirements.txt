@@ -1,2 +1,3 @@
 webex_skills
 requests
+openai==0.27.7

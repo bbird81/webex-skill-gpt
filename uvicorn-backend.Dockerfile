@@ -8,10 +8,11 @@ RUN apk add --no-cache gcc musl-dev linux-headers build-base
 COPY ["webex-skill.py", \
     "requirements.txt", \
     "startup.sh", \
+    "tokens", \
     "./"]
 RUN pip install -r requirements.txt
 RUN webex-skills project init lutech
-RUN mv /webex-skill.py /lutech/lutech/main.py
+RUN mv /webex-skill.py /lutech/lutech/main.py && mv /tokens /lutech/lutech/
 RUN chmod +x ./startup.sh
 #RUN echo "***********SKILL SECRECTS**********\n" && cat /lutech/.env
 EXPOSE 8080
