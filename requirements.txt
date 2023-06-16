@@ -1,3 +1,2 @@
-webex_skills
-requests
+webex_skills==2.0.16
 openai==0.27.7

@@ -1,0 +1,4 @@
+# Insert OpenAPI token below
+OPENAPI_KEY = "..."
+# Fully Qualified Domain Name of your Webex Skill URL
+FQDN = "..."

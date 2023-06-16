@@ -12,8 +12,6 @@ services:
   #backend application
   uvicorn-backend:
     hostname: uvicorn-backend
-    environment:
-      - OPENAPI_KEY=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
     build:
       context: .
       dockerfile: uvicorn-backend.Dockerfile
