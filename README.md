@@ -3,7 +3,7 @@
 It's a simple integration between Cisco's Webex Skill SDK and ChatGPT Library.
 
 ## Sounds cool, what does it do?
-It basically forwards all of you inquiries to this Webex Assistant Skill to ChatGPT
+It basically forwards all of your inquiries to this Webex Assistant Skill to ChatGPT.
 
 ## You are telling me that I can use ChatGPT from my Webex Devices? IT'S AWESOME!!
 Yeah, that's basically what it does and yes I agree it's indeed pretty cool.
@@ -12,7 +12,7 @@ Yeah, that's basically what it does and yes I agree it's indeed pretty cool.
 # Installation
 ## So how does it work? Please tell me it's not (too) complicated...
 I would say it's pretty simple since I've containerized the whole thing to make it more portable and as much easy to use as possible, so that you don't have to fiddle with SDKs and stuff.
-I'm going to explain the logic behind this on day in the following section, but for now just jump to the TL;DR section.
+I'm going to explain the logic behind this one day in the following section, but for now just jump to the TL;DR section.
 
 ## Here I will explain the whole logic some day... but not today.
 Please be patient...
@@ -42,7 +42,7 @@ This is what it looks like to fire it up it on a virtual private server, but you
     docker compose --env-file ENV_file up -d
     ```
 4. Create the skill  
-    Create the skill following [this](https://developer.webex.com/docs/api/guides/webex-assistant-skills-guide-developer-portal-guide#creating-a-skill) tutorial.
+    Create the skill following [this](https://developer.webex.com/docs/api/guides/webex-assistant-skills-guide-developer-portal-guide#creating-a-skill) tutorial.  
     Secret and public key can be found in the output of the docker compose logs, by issuing:
     ```
     docker compose logs
