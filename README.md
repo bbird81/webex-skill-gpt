@@ -54,7 +54,7 @@ This is what it looks like to fire it up it on a virtual private server, but you
     _Please pay attention that the URL in the Webex Skill portal **MUST** end with /parse_
 5. Proceed to enable the skill in [Webex Control Hub](https://admin.webex.com)
 6. Test & Invoke it!  
-    You might want to test it using (this)[https://assistant-web.intelligence.webex.com/] web tool or, if you're feeling lucky, just try it on a compatible device using the expression:  
+    You might want to test it using [this](https://assistant-web.intelligence.webex.com/) web tool or, if you're feeling lucky, just try it on a compatible device using the expression:  
     **"Hey Webex, tell \<your skill name\> \<your request to ChatGPT\>".**  
     The complete guide can be found here:  
     https://developer.webex.com/docs/api/guides/webex-assistant-skills-guide
