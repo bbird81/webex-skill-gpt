@@ -41,7 +41,7 @@ Please be patient...
         This will start a wizard, which will ask for your fqdn, an email and a couple more personal information.
         If you give reachability from the Internet on port 80, you can do everything locally (option 1 of certbot wizard).
         Once finished, your certificate+key will be saved in  
-        `/etc/letsencrypt/live/ ->your fqdn<- /fullchain.pem`
+        `/etc/letsencrypt/live/ ->your fqdn<- /fullchain.pem`  
         `/etc/letsencrypt/live/ ->your fqdn<- /privkey.pem`
 
 ### Installation walkthrough

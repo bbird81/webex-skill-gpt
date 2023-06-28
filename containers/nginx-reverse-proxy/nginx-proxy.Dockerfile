@@ -6,4 +6,4 @@ COPY ./includes/ /etc/nginx/includes/
 #ssl directory contains certificates
 COPY ./certificates /etc/ssl/certs/nginx/
 # overwrites 
-RUN sed -i "s/your_server_fqdn/$FQDN/" /etc/nginx/conf.d/default.conf
+RUN echo "your server fqdn is $FQDN" && sed -i "s/your_server_fqdn/$FQDN/" /etc/nginx/conf.d/default.conf
