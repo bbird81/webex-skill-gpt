@@ -1,3 +1,5 @@
+[![published](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-published.svg)](https://developer.cisco.com/codeexchange/github/repo/bbird81/webex-skill-gpt)  
+
 # Webex-Skill-GPT
 ## What's this?
 It's a simple integration between Cisco's Webex Skill SDK and ChatGPT Library.
