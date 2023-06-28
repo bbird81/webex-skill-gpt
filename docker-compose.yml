@@ -8,6 +8,8 @@ services:
       dockerfile: nginx-proxy.Dockerfile
     ports:
       - "443:443"
+    environment:
+      - FQDN
 
   #backend application
   uvicorn-backend:
@@ -15,3 +17,5 @@ services:
     build:
       context: .
       dockerfile: uvicorn-backend.Dockerfile
+    environment:
+      - OPENAPI_KEY

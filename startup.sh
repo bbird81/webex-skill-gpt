@@ -1,6 +1,8 @@
 #!/bin/sh
-if [$OPENAI_KEY];
+if [ -z $OPENAI_KEY]; # if string is empty
 then
+    echo "OpenAI API token not set: ABORTING!"
+else
     echo "***********SKILL SECRECTS**********"
     cat /wbxskill/.env
     echo
@@ -10,6 +12,4 @@ then
     echo "Token OpenAI: $OPENAI_KEY"
     cd /wbxskill
     uvicorn --port 8080 --host 0.0.0.0 --reload wbxskill.main:api
-else
-    echo "OpenAI API token not set: ABORTING!"
 fi

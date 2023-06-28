@@ -3,6 +3,7 @@ from webex_skills.dialogue import responses
 from webex_skills.models.mindmeld import DialogueState
 import openai, os
 
+openai.api_key = os.getenv("OPENAPI_KEY")
 api = SimpleAPI()
 
 @api.handle(default=True)
