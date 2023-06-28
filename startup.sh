@@ -1,5 +1,5 @@
 #!/bin/sh
-if [ -z $OPENAI_KEY]; # if string is empty
+if [ -z $OPENAI_KEY ]; # if string is empty
 then
     echo "OpenAI API token not set: ABORTING!"
 else
