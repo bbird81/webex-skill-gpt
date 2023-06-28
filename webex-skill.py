@@ -3,7 +3,7 @@ from webex_skills.dialogue import responses
 from webex_skills.models.mindmeld import DialogueState
 import openai, os
 
-if not os.getenv("OPENAI_KEY"):
+if os.getenv("OPENAI_KEY"):
     openai.api_key = os.getenv("OPENAI_KEY")
 else:
     print("OpenAI Token not set: ABORTING!", flush=True)
