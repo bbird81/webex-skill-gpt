@@ -1,12 +1,13 @@
 from webex_skills.api import SimpleAPI
 from webex_skills.dialogue import responses
 from webex_skills.models.mindmeld import DialogueState
-import openai, os
+import openai, os, sys
 
 if os.getenv("OPENAI_KEY"):
     openai.api_key = os.getenv("OPENAI_KEY")
 else:
     print("OpenAI Token not set: ABORTING!", flush=True)
+    sys.exit(2)
 
 api = SimpleAPI()
 
