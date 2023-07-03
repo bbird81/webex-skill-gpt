@@ -10,16 +10,17 @@ It basically forwards all of your inquiries to this Webex Assistant Skill to Cha
 ## You are telling me that I can use ChatGPT from my Webex Devices? IT'S AWESOME!!
 Yeah, that's basically what it does and yes I agree it's indeed pretty cool.
 
+## It's too good to be true, must be black magic... How does it work?
+For now we'll settle for this (very) high level design to give you an idea of how it's done.
+
+![Schema of the application](wbx-skill-gpt-schema.png)
+(Yes, this schema is done with [excalidraw](https://excalidraw.com/))
 
 # Installation
-## So how does it work? Please tell me it's not (too) complicated...
+### So how does it work? Please tell me it's not (too) complicated...
 I would say it's pretty simple since I've containerized the whole thing to make it more portable and as much easy to use as possible, so that you don't have to fiddle with SDKs and stuff.
 I'm going to explain the logic behind this one day in the following section, but for now just jump to the TL;DR section.
 
-## Here I will explain the whole logic some day... but not today.
-Please be patient...
-
-# TL;DR
 ### Prerequisites
 - A Linux server with Docker installed (or any other container tool of your choice, e.g. podman + buildah... I used Docker though).
     - **TIP**: you can use the docker script to quickly install docker on supported distros on a development environment:
@@ -44,7 +45,8 @@ Please be patient...
         If you give reachability from the Internet on port 80, you can do everything locally (option 1 of certbot wizard).
         Once finished, your certificate+key will be saved in  
         `/etc/letsencrypt/live/ ->your fqdn<- /fullchain.pem`  
-        `/etc/letsencrypt/live/ ->your fqdn<- /privkey.pem`
+        `/etc/letsencrypt/live/ ->your fqdn<- /privkey.pem`  
+- OpenAI account with an API token
 
 ### Installation walkthrough
 This is what it looks like to fire it up it on a virtual private server, but you could as well build your container image and deploy it in your preferred cloud container, or just scrap the ngnix layer altogether and use a lambda function... I'll try to enrich with other deploy scenarios in the future.
