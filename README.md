@@ -1,5 +1,7 @@
+# DevNet Exchange Disclaimer
 [![published](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-published.svg)](https://developer.cisco.com/codeexchange/github/repo/bbird81/webex-skill-gpt)  
-
+*Cisco provides Code Exchange for convenience and informational purposes only, with no support of any kind. This page contains information and links from third-party websites that are governed by their own separate terms. Reference to a project or contributor on this page does not imply any affiliation with or endorsement by Cisco. Please note that some of the repositories in Code Exchange may be enabled to interact with third-party Generative AI platforms outside of Cisco’s control, and users should review those third-party terms and privacy statements to understand how data is processed, stored or used, including input data."*   
+   
 # Webex-Skill-GPT
 ## What's this?
 It's a simple integration between Cisco's Webex Skill SDK and ChatGPT Library.
